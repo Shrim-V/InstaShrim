@@ -1,8 +1,3 @@
-<html> 
-
-<head>
-
-
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
@@ -123,7 +118,3 @@
     <input type="submit" value="Login" /> 
 </form> 
 <a href="register.php">Register</a>
-
-</head>
-
-</html>
