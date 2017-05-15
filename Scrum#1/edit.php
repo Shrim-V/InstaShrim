@@ -95,7 +95,7 @@
 	?>
 
 	<form action = "search.php?go" id = "searchform" method = "post">
-	Search BITCH: <input type = "text" name = "search">
+	Search: <input type = "text" name = "search">
 	<input type = "submit" name = "submit">
 	</form>
     
