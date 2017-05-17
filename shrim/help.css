@@ -1,0 +1,39 @@
+body{
+	background-color: lightblue;
+}.nav1{
+	background-color: darkblue;
+	border-radius: 20px;
+	position: absolute; top: 10px;
+}h2{
+	text-align: center; color: white;
+    position: absolute; top: -25px; left: 440px;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 50px;
+}.french{
+    position: absolute; left: 1000px;
+}.spanish{
+    position: absolute; left: 1070px;
+}.eng{
+	position: absolute; left: 1000px;
+}.collapsible-header{
+	background-color: pink;
+	border-radius: 20px;
+	font-family: "Lucida Console", Lucida, monospace;
+    font-size: 15px;
+    height: 20px;
+}.collapsible-body{
+	background-color: red;
+	color: white;
+	font-family: "Lucida Console", Lucida, monospace;
+    font-size: 15px;
+    border-radius: 20px;
+}.subtext{
+	font-family: "Lucida Console", Lucida, monospace;
+    font-size: 20px;
+    text-align: center;
+}h3{
+	text-align: center; color: black;
+    position: absolute; top: 60px; left: 525px;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 40px;
+}
