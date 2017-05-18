@@ -1,0 +1,120 @@
+input[type=text], input[type=password] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: lightblue;
+}.ok{
+    background-color: darkblue;
+    width: 1230px;
+    height: 70px;
+    border-radius: 15px;
+}h2{
+    text-align: center; color: white;
+    position: absolute; top: -30px; left: 440px;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 50px;
+}.french{
+    position: absolute; left: 1170px; top: 10px;
+}.spanish{
+    position: absolute; left: 1100px; top: 10px;
+}.eng{
+     position: absolute; left: 1100px; top: 10px;
+     }.eng1{
+         position: absolute; left: 1170px; top: 10px;
+     }
+
+}.logo{
+    position: absolute; left: 0px;
+}h1{
+    color: black;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 45px;
+    position: absolute; top: 70px; left: 45%;
+}p{
+    color: white;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 15px;
+}.box{
+    background-color: darkblue;
+    position: absolute; top: 200px; left: 405px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}.sat1{
+    background-color: limegreen;
+    color: white;
+    position: absolute; top: 120px; left: 35px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+}.sc1{
+    border-radius: 30px;
+}.sat2{
+    background-color: orange;
+    color: white;
+    position: absolute; top: 420px; left: 35px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+}.sc2{
+    border-radius: 30px;
+}.sat3{
+    background-color: #d8d515;
+    color: white;
+    position: absolute; top: 420px; left: 875px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+}.sc3{
+    border-radius: 30px;
+}.sat4{
+    background-color: red;
+    color: white;
+    position: absolute; top: 120px; left: 875px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+}.sc4{
+    border-radius: 30px;
+}.regbutt{
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    position: absolute; top: 80; left: 130;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 12px;
+}.regbutt:hover{
+    background-color: yellow;
+    color: black;
+}.regbox{
+    position: absolute; left: 455px; top: 70%;
+    background-color: violet;
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}.redirect{
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 18px;
+}.logbutt{
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 12px;
+    position: absolute; top: 235px; left: 187px;
+}.logbutt:hover{
+    background-color: yellow;
+    color: black;
+}
