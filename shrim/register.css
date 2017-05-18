@@ -236,4 +236,13 @@ h6{
     border-radius: 20px;
     position: absolute; top: 500px; left: 520px;
     padding: 15px;
+}.logoutbutt{
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 12px;
+}.logoutbutt:hover{
+    background-color: yellow;
+    color: blue;
 }

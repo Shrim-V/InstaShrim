@@ -23,7 +23,9 @@
         if(empty($_POST['password'])) 
         { 
             echo("Please enter a password."); 
-        }  
+        }  if ($_POST['password'] != $_POST['confirmpassword']){
+            die("Passwords do not match.");
+        }
 
        /* if (($_POST['password']) != ($_POST['confirmpassword']{
             echo{"Passwords do not match!"};
@@ -216,29 +218,8 @@
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p3>Déjà Membre?</p3><br><br>
 <a href="login.php"><button type = "button" class = "logbutt">Login Içi!</button></a>
 </div>
-<div id="id01" class="modal">
 
-<form class="modal-content animate" action="flogin.php">
-<form action="fregister.php" method="post"> 
-<h6>
-    Usernom:<br /> 
-    <input type="text" name="username" placeholder="@johnappleseed" /> 
-    <br /><br /> 
-    Courriel:<br /> 
-    <input type="text" name="email" placeholder="john.appleseed@shrimstagram.co" /> 
-    <br /><br /> 
-    Mot de Passe:<br /> 
-    <input type="password" name="password" placeholder="shrimstagramrocks" /> 
-    <br /><br /> 
-    Confirmer le Mot de Passe:<br /> 
-    <input type="password" name="confirmpassword" placeholder="shrimstagramrocks" /> 
-    <br /><br /> 
-    <input type="submit" value="Registre" /> 
-    <a href = "register.php" class = "closebutt"><img src = "icon-close.png"></a>
-</form>
-</h6>
-</form>
-</div>
+
 
 
 <div class="card1">
@@ -258,4 +239,27 @@
   </div>
 </div>
 </form>
+
+
+<div id="id01" class="hov">
+<form action="fregister.php" method="post"> 
+<h6>
+    Usernom:<br /> 
+    <input type="text" name="username" placeholder="@johnappleseed" /> 
+    <br /><br /> 
+    Courriel:<br /> 
+    <input type="text" name="email" placeholder="john.appleseed@shrimstagram.co" /> 
+    <br /><br /> 
+    Mot de Passe:<br /> 
+    <input type="password" name="password" placeholder="shrimstagramrocks" /> 
+    <br /><br /> 
+    Confirmer le Mot de Passe:<br /> 
+    <input type="password" name="confirmpassword" placeholder="shrimstagramrocks" /> 
+    <br /><br /> 
+    <input type="submit" value="Registre" class = "logoutbutt" /> 
+    <a href = "register.php"><button type = "button" class = "logoutbutt">Annuler</button></a>
+</form>
+</h6>
+</form>
+</div>
 

@@ -13,7 +13,7 @@
 
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="about.html" class = "about">De</a></li>
-  <li><a href="help.html" class = "help">Aide</a></li>
+  <li><a target = "_blank" href ="https://github.com/Shrim-V/InstaShrim" class = "about">Github</a></li>
   <li class="divider"></li>
 </ul>
 
@@ -23,7 +23,7 @@
     <ul class="right hide-on-med-and-down">
      <h2><b>Shrimstagram</b></h2>
       <a href = help.html><img src = "eng.png" class = "eng"></a>
-    <a href = spegister.php><img src = "spanish.png" class = "spanish"></a>
+    <a href = spelp.php><img src = "spanish.png" class = "spanish"></a>
 
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button" data-activates="dropdown1">Plus<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -50,7 +50,10 @@
       <div class="collapsible-header"><i class="material-icons">contact_phone</i>Comment puis-je vous rejoindre?</div>
       <div class="collapsible-body"><span>Si vous souhaitez contacter l'un de nous, cliquez sur "plus" sur la barre de navigation et sélectionnez la page à propos de. Ici, vous trouverez toutes les informations dont vous avez besoin!</span></div>
     </li>
-    
+    <li>
+      <div class="collapsible-header"><i class="material-icons">access_time</i>Combien de temps ce site a-t-il pris pour faire?</div>
+      <div class="collapsible-body"><span>Il a fallu environ trois semaines pour créer!</span></div>
+    </li>
   </ul>
 
 <p class = "subtext"><u>Utilisation:</u></p>

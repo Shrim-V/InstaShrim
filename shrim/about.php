@@ -13,8 +13,8 @@
 
 
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="about.html" class = "about">About</a></li>
-  <li><a href="help.html" class = "help">Help</a></li>
+<li><a target = "_blank" href ="https://github.com/Shrim-V/InstaShrim" class = "about">Github</a></li>
+  <li><a href="help.html" class = "about">Help</a></li>
   <li class="divider"></li>
 </ul>
 
@@ -23,8 +23,8 @@
        <a href = "edit.php"><img src = "logo.png"></a>
     <ul class="right hide-on-med-and-down">
      <h2><b>Shrimstagram</b></h2>
-      <a href = help.html><img src = "eng.png" class = "eng"></a>
-    <a href = spegister.php><img src = "spanish.png" class = "spanish"></a>
+      <a href = frabout.php><img src = "french.png" class = "eng"></a>
+    <a href = spabout.php><img src = "spanish.png" class = "spanish"></a>
 
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button" data-activates="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -80,19 +80,21 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>Hi! I'm Shrimad Vora, one of the creators of this revolutionary new social website. Hope you're liking what you see! If you are, feel free to like our page on a real social media site!</p>
+          <p>Hi! I'm Shrimad Vora, one of the creators of this revolutionary new social website. Hope you're liking what you see! If you are, feel free to like our page on a real social media site! Ever since I was a young lad, I've had the dream of working with someone to create the greatest social media site ever. And, well... I sorta did that. There are many reasons why I love Shrimstagram, and one of them is that I've always loved laughing at myself, and this website gives me the chance to do that everyday! <br> <br>If you would like to contact me, here is my information: <br> <b>Phone: </b>(647)870-5270 <br> <b>Email:</b> shrimad.vora@ucc.on.ca <br> <b>Instagram: </b> @shrim_v</p>  <b> Snapchat: </b> shrimad101 <b> <br>Shrimstagram: </b> @shrimthecreator
+        </div>
         </div>
         <div class="card-action">
-          <a target = '_blank' class = "emailme" href="https://www.google.ca/webhp?authuser=0#authuser=0&q=email"><p class = "email">Questions/Concerns? Email Me!</p>(647)870-5270</a>
-          <a target = '_blank' class = "flike" href = "https://www.facebook.com/?stype=lo&jlou=Aff6KF948r_6Ay53uHw7VjyQiCPqBWDiNRmPl_yjc3LtgkCEThggQCcMwhFzdbxq7EfW8CRrMJ4RINR5GKLlqe6r2jp7_pE1J4--d5LH67WEMw&smuh=5702&lh=Ac_25RppNszZ5OxL"><img src = "flike2.png"></a>
-          <a target = '_blank' class = "twike" href = "https://www.twitter.com"><img src = "Twitter.png"></a>
+          <a target = '_blank' href="https://goo.gl/vt5am8"><p class = "contact">Email Me!</p></a>
+          <a target = '_blank' href = "https://www.snapchat.com"><p class = "contact">Snap Me!</p></a><br>
+          <a target = '_blank'  href = "https://www.instagram.com"><p class = "contact">Slide into My DMs!</p></a><br>
+          <a target = '_blank' href = "https://goo.gl/fOm5Zy"><p class = "contact">Call Me!</p></a>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="col s12 m7">
+  <div class="col s11 m7">
     <!--<h2 class="header">Meet the Creators!</h2>-->
     <div class="card horizontal">
       <div class="card-image">
@@ -100,12 +102,15 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>Hi! I'm Ansh Kuckreja, one of the creators of this revolutionary new social website. Hope you're liking what you see! If you are, feel free to like our page on a real social media site!</p>
+          <p>Hi! I'm Ansh Kuckreja, one of the creators of this revolutionary new social website. Hope you're liking what you see! If you are, feel free to like our page on a real social media site! Ever since I was a little chap growing up on the farms in the outskits of rural North York, I have had the dream of being able to express myself freely through social media. Up until the birth of my baby boy, Shrimstagram, that is, I have never been satisfied with other social media sites. So what do I love about Shrimstagram? Well, it's got to be how fun it makes using social media everyday! <br> <br> If you would like to contact me, here is my information: <br> <b>Phone: </b>(416)821-2244 <br> <b>Email:</b> ansh.kuckreja@ucc.on.ca <br> <b>Instagram: </b> @anshkuckreja</p> <b> Snapchat: </b> truenish <b> <br>Shrimstagram: </b> @anshthecreator 
+        </div>
+          </p>
         </div>
         <div class="card-action">
-          <a target = '_blank' class = "emailme" href="https://www.google.ca/webhp?authuser=0#authuser=0&q=email"><p class = "email">Questions/Concerns? Email Me!</p>w</a>
-          <a target = '_blank' class = "flike" href = "https://www.facebook.com/?stype=lo&jlou=Aff6KF948r_6Ay53uHw7VjyQiCPqBWDiNRmPl_yjc3LtgkCEThggQCcMwhFzdbxq7EfW8CRrMJ4RINR5GKLlqe6r2jp7_pE1J4--d5LH67WEMw&smuh=5702&lh=Ac_25RppNszZ5OxL"><img src = "flike2.png"></a>
-          <a target = '_blank' class = "twike" href = "https://www.twitter.com"><img src = "Twitter.png"></a>
+           <a target = '_blank' href="https://goo.gl/vt5am8"><p class = "contact">Email Me!</p></a>
+          <a target = '_blank' href = "https://www.snapchat.com"><p class = "contact">Snap Me!</p></a><br>
+          <a target = '_blank'  href = "https://www.instagram.com"><p class = "contact">Slide into My DMs!</p></a><br>
+          <a target = '_blank' href = "https://goo.gl/fOm5Zy"><p class = "contact">Call Me!</p></a>
         </div>
       </div>
     </div>

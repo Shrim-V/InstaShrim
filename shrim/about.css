@@ -20,6 +20,8 @@ body{
     position: absolute; left: 1070px;
 }.eng{
 	position: absolute; left: 1000px;
+}.eng1{
+	position: absolute; left: 1070px;
 }.email{
 	color: red;
 	font-family: "Lucida Console", Lucida, monospace;
@@ -49,4 +51,12 @@ body{
 }.shrimcard1{
 	font-family: "Lucida Console", Lucida, monospace;
     font-size: 15px;
+}.contact{
+	color: red;
+}.about{
+	border-radius: 20px;
+	background-color: darkblue;
+	color: lightblue;
+}.about:hover{
+	background-color:yellow;
 }

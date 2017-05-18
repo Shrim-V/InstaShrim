@@ -1,59 +1,79 @@
 body{
 	background-color: lightblue;
+}.ok{
+    background-color: darkblue;
+    width: 1230px;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute; top: 10px; left: 15px;
+
+}h2{
+    text-align: center; color: white;
+    position: absolute; top: -25px; left: 440px;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 50px;
+}.logo{
+    position: absolute; left: 0px;
+}.french{
+    position: absolute; left: 1070px; top: 2px;
+}.spanish{
+    position: absolute; left: 1000px; top: 4px;
+}.eng{
+    position: absolute; left: 1070px; top: 10px;
+
+}.eng1{
+    position: absolute; left: 1000px; top: 10px;
+
 }input[type=text], input[type=password] {
-    width: 40%;
+    width: 400px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border-radius: 25px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    background-color: white;
-}
-.ok{
-    background-color: darkblue;
-    width: 1230px;
-    height: 70px;
-    border-radius: 15px;
-}.french{
-    position: absolute; left: 1000px; top: 10px;
-}.spanish{
-    position: absolute; left: 1070px; top: 10px;
-}.eng{
-    position: absolute; left: 1170px; top: 10px;
-
-}.eng1{
-    position: absolute; left: 1100px; top: 10px;
-
-}.logo{
-    position: absolute; left: 0px;
-}.logoutbutt{
-	color: white;
-	background-color: black;
-}h2 {
-	text-align: center; color: white;
-    position: absolute; top: -30px; left: 440px;
-    font-family: "Lucida Console", Lucida, monospace;
-    font-size: 50px;
-}.collapsible-header{
-	border-radius: 20px;
-}.more{
-	position: absolute; left: 1150px; top: 15px;
-	color: white;
-	font-family: "Lucida Console", Lucida, monospace;
-    font-size: 25px;
-}.nav1{
-	background-color: darkblue;
-	border-radius: 20px;
-	position: absolute; top: 10px;
-}.about{
-	background-color: black;
-	border-radius: 20px;
-	color: white;
-}.help{
+}.row1{
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	width: 30%;
+	color: black;
+}.tweetbox{
 	background-color: red;
+    position: absolute; top: 200px; left: 705px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}.searchbox{
+	background-color: green;
+    position: absolute; top: 500px; left: 705px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}.tweetcard{
 	border-radius: 20px;
+	background-color: red;
+}.tweettext{
+	color: red;
+}.usrnm{
+	color: red;
+}.welcome{
+
+}.dropdown{
 	color: white;
-}.dropdown-content{
-	background-color: lightblue;
+}.about{
+	border-radius: 20px;
+	background-color: darkblue;
+	color: lightblue;
+}.about:hover{
+	background-color:yellow;
+}.logoutbutt{
+	background-color: grey;
+    border-radius: 10px;
+    color: white;
+    font-family: "Lucida Console", Lucida, monospace;
+    font-size: 12px;
+}.logoutbutt:hover{
+	background-color: yellow;
+	color: blue;
 }

@@ -24,10 +24,9 @@
     </div>
     </nav>
 <br><br><br><br>
-
+    
 	<?php
-		 date_default_timezone_set("America/New_York");
-    	$timedate = date("F j, Y")." at " . date("g:i a");
+	
 	    // pass in some info;
 		require("common.php"); 
 		
@@ -45,8 +44,7 @@
 		
 		// To access $_SESSION['user'] values put in an array, show user his username
 		$arr = array_values($_SESSION['user']);
-		echo "Welcome " . $arr[1] . '!';
-		$likes = 0;
+		echo "Welcome " . $arr[1];
 
 		// open connection
 		$connection = mysqli_connect($host, $username, $password) or die ("Unable to connect!");
@@ -54,36 +52,31 @@
 		// select database
 		mysqli_select_db($connection, $dbname) or die ("Unable to select database!");
 
-		// create query
-		$query = "SELECT * FROM symbols";
-       
+
+		if(isset($_POST['search'])){
+			$searchq = $_POST['search'];
+			$query = "SELECT * FROM symbols WHERE Tweet LIKE '%".$searchq."%' OR Hashtag LIKE '%".$searchq."%'";
+}
+
+
+
 		// execute query
 		$result = mysqli_query($connection,$query) or die ("Error in query: $query. ".mysql_error());
-
-		date_default_timezone_set("America/New_York");
-    	$timedate = date("F j, Y")." at " . date("g:i a");
-
-		echo "<br>";
-		echo "<br>";
-		echo "<br>";
-
 
 		// see if any rows were returned
 		if (mysqli_num_rows($result) > 0) {
 
     		// print them one after another
-    		
+    		echo "<table cellpadding=10 border=1>";
     		while($row = mysqli_fetch_row($result)) {
-        		
-				//echo "<td>".$row[0]."</td>";
-        		/*echo "<td>" . $row[1]."</td>";
+        		/*echo "<tr>";
+				echo "<td>".$row[0]."</td>";
+        		echo "<td>" . $row[1]."</td>";
         		echo "<td>".$row[2]."</td>";
-        		echo "<td>".$row[3]."</td>";
 				echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
-				echo "<td><a href=".$_SERVER['PHP_SELF']."?2id=".$row[3].">Like it!</a></td>";
-        		echo "</tr>"; */
-        		echo
-     ' 
+        		echo "</tr>";*/
+        		echo 
+        		' 
        <div class="row">
         <div class="col s12 m6">
           <div class="card blue darken-1">
@@ -98,7 +91,9 @@
           </div>
         </div>
       </div>';
-            
+
+
+
     		}
 		  
 
@@ -111,49 +106,19 @@
 		// free result set memory
 		mysqli_free_result($connection,$result);
 
-
 		// set variable values to HTML form inputs
 		$Tweet = $_POST['Tweet'];
     	$Hashtag = $_POST['Hashtag'];
 		
-	if (strpos($Hashtag, ' ') !== false) {
-		$stringbreak = explode(' ', $Hashtag);
-
-			foreach($stringbreak as &$value) {
-				$value = '#'.$value;
-			}
-			unset($value);
-			$Hashtag = implode(' ', $stringbreak);
-		}
-		
-
-
 		// check to see if user has entered anything
 		if ($Hashtag != "") {
 	 		// build SQL query
-			$query = "INSERT INTO symbols (Tweet, Hashtag, User, timedate) VALUES ('$Tweet', '$Hashtag', '$arr[1]', '$timedate')";
+			$query = "INSERT INTO symbols (Tweet, Hashtag) VALUES ('$Tweet', '$Hashtag')";
 			// run the query
      		$result = mysqli_query($connection,$query) or die ("Error in query: $query. ".mysql_error());
 			// refresh the page to show new update
 	 		echo "<meta http-equiv='refresh' content='0'>";
 		}
-
-		// if Like it! is pressed 
-
-		if (isset($_GET['likeid'])) {
-			echo "boi";
-			/*echo $_SERVER['PHP_SELF'];
-			$likes = $likes + 1;
-			$query = "UPDATE symbols SET Likes = Likes + 1 WHERE id = " .$_GET['likeid'];
-			echo Ansh;
-			$result = mysqli_query($connection,$query) or die ("Error in query: $query. ".mysql_error());
-			$location = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-			echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL='.$location.'">'; 
-			echo "Ansh";*/
-
-			
-		}
-
 		
 		// if DELETE pressed, set an id, if id is set then delete it from DB
 		if (isset($_GET['id'])) {
@@ -176,11 +141,8 @@
 		mysqli_close($connection);
 
 	?>
-	</script>
 
-
-
-<head>
+	<head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -196,25 +158,15 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
 
-    <div class = "searchbox">
-	<form action = "search.php?go" id = "searchform" method = "post">
-	<br>
-	<i class = "material-icons">search</i><input type = "text" class = "searchbar" name = "search" placeholder="Type Here!">
-	<br>
-	<input type = "submit" name = "submit" class = "logoutbutt">
-	<br>
-	</form>
-	</div>
 	
-    <div class = "tweetbox">
+    <div class = "searchbox">
     <!-- This is the HTML form that appears in the browser -->
    	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-    	Tweet: <input type="text" name="Tweet" class = "searchbar" placeholder="Tweet!">
-    	Hashtag: <input type="text" name="Hashtag" class="searchbar" placeholder="Type!">
-    	<input type="submit" name="submit" class = "logoutbutt">
+    	Tweet: <input type="text" name="Tweet">
+    	Hashtag: <input type="text" name="Hashtag">
+    	<input type="submit" name="submit">
     </form>
-    <form action="logout.php" method="post"><button class = "logoutbutt">Log out</button></form>
+    <form action="logout.php" method="post"><button>Log out</button></form>
     </div>
-
 	</body>
 </html>
